@@ -30,8 +30,11 @@ def continuous_numbers(stack, summation):
 
     for i in range(0, stack_len):
         for j in range(i+1, stack_len):
-            if sum(stack[i:j]) == summation:
+            summed = sum(stack[i:j])
+            if  summed == summation:
                 return stack[i:j]
+            elif summed > summation:
+                break
     
     return []
 
