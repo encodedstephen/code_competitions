@@ -2,6 +2,7 @@
 import re 
 import numpy as np 
 
+# Note only used in the sample text
 def print_board(board:dict):
     print('   ', end=' ')
     for i in range(0,10): 
