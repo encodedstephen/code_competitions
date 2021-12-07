@@ -11,7 +11,11 @@ def next_day(fish_age):
     next_age = [0] * 9
     for i in range(1,9):
         next_age[i - 1] = fish_age[i]
+
+    # When fish hit 0, each reproduce another
     next_age[8] = fish_age[0]
+    
+    # And the first reset to 6 till reproduced
     next_age[6] += fish_age[0]
 
     return next_age
