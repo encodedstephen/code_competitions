@@ -2,6 +2,7 @@
 
 lines = []
 with open("input.txt", "r") as f:
+# with open("sample.txt", "r") as f:
     lines = f.readlines()
 
 # pt 1

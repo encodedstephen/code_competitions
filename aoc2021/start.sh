@@ -7,7 +7,7 @@ if [[ $# -ne 1 ]]; then
   exit
 fi
 
-num=$1
+num=$(printf "%02d" $1)
 cp -R $DIR/template day$num
 # sed -i '' "s/dayxxx/day${num}/g" day${num}/main.py
 AOC_COOKIE=`cat .aoc-cookie`
