@@ -11,4 +11,4 @@ num=$(printf "%02d" $1)
 cp -R $DIR/template day$num
 # sed -i '' "s/dayxxx/day${num}/g" day${num}/main.py
 AOC_COOKIE=`cat .aoc-cookie`
-curl -b "session=$AOC_COOKIE" https://adventofcode.com/2021/day/${num}/input > day${num}/input.txt
+curl -b "session=$AOC_COOKIE" https://adventofcode.com/2021/day/${1}/input > day${num}/input.txt
